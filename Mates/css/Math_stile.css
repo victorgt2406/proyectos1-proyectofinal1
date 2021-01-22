@@ -1,0 +1,226 @@
+/*
+	Math_stile.css
+
+	Matemáticas.
+
+	AUTOR: Víctor Gutiérrez Tovar
+	FECHA: 12/01/2021
+	TÍTULO: Math_stile.
+*/
+/*Backgraund*/
+body{
+	background-color: #404040;
+}
+/*Letras*/
+	h1{
+		color: #FFFFFF;
+		font-family: Calibri, Arial;
+	}
+	h2{
+		color: #FFFFFF;
+		font-family: Calibri, Arial;
+	}
+	h3{
+		color: #FFFFFF;
+		font-family: Calibri, Arial;
+	}
+	p{
+		color: #FFFFFF;
+		font-family: Calibri, Arial;
+	}
+	.res{
+		color: #FFFFFF;
+		font-family: Calibri, Arial;
+		margin: 15px;
+	}
+	.creditos{
+		color: #FFFFFF;
+		font-family: Calibri, Arial;
+		width: 300px;
+	}
+	.error{
+		color: #FF0000;
+		font-family: Calibri, Arial;
+		margin: 15px;
+	}
+
+/*Botones nav*/
+	.nav_top{
+		background-color: #202020;
+		color: #FFFFFF;
+		font-family: Calibri, Arial;
+		text-decoration: none;
+		padding: 15px;
+	}
+	.nav_top:hover{
+		background-color: #000000;
+		transition:all .5s ease-in-out;
+	}
+
+	.nav_main{
+		background-color: #000F50;
+		color: #FFFFFF;
+		font-family: Calibri, Arial;
+		text-decoration: none;
+		padding: 30px;
+		font-size: 30px;
+
+		text-align: center;
+
+	}
+	.nav_main:hover{
+		background-color: #CF7400;
+		transform: scale(1.25);
+		transition:all .5s ease-in-out;
+	}
+
+	.nav_bot{
+		font-family: Calibri, Arial;
+		color: #FFFFFF;
+		text-decoration: none;
+	}
+	.nav_bot:hover{
+		text-decoration: underline;
+	}
+
+	.top_page{
+		display: flex;
+		justify-content: center;
+
+		background-color: #445290;
+		color: #FFFFFF;
+		font-family: Calibri, Arial;
+		text-decoration: none;
+		font-size: 20px;
+		padding: 10px;
+	}
+	.top_page:hover{
+		background-color: #FFFFFF;
+		color: #202020;
+		transition:all .75s ease-in-out;
+	}
+/*Botones*/
+	.boton_calcular{
+		background-color: #FFF000;
+		color: #000FFF;
+		font-family: Calibri, Arial;
+		font-size: 15px;
+		text-decoration: none;
+		padding: 5px;
+
+		border: none;
+		border-radius: 5px;
+		outline: none;
+
+		cursor: pointer;
+	}
+	.boton_calcular:hover{
+		background-color: #000FFF;
+		color: #FFF000;
+		transition:all .5s ease-in-out;
+	}
+/*estructuras*/
+	header{
+		background-color: #750000;
+		display: flex;
+		flex-direction: column;
+	}
+	nav{
+		display: flex;
+		justify-content: center;
+
+		position: sticky;
+		top: 0;
+
+		background-color: #202020;
+	}
+	main{
+		display: flex;
+		flex-direction: column;
+		background-color: #000F50;
+		padding-bottom: 30px;
+	}
+		.input_text{
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+
+		.resultado{
+			display: flex;
+			justify-content: center;
+		}
+
+	#footer_main{
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+		.fila_footer{
+			display: flex;
+			flex-direction: column;
+		}
+/*inputs*/
+	.caja_texto{
+		background-color: #606060;
+		border: none;
+		border-radius: 2px;
+		outline: none;
+		color: #FFFFFF;
+		font-family: Calibri, Arial;
+		padding: 10px;
+		margin:10px;
+
+	}
+	.caja_texto::placeholder{
+		color: #FFFF00;
+	}
+	.caja_texto:hover{
+		background-color: #202020;
+		transition:all .5s ease-in-out;
+	}
+
+	.caja_texto_error{
+		background-color: #606060;
+		border: 2px solid #FF0000;
+		border-radius: 5px;
+		outline: none;
+		color: #FFFFFF;
+		font-family: Calibri, Arial;
+		padding: 10px;
+		margin:10px;
+
+		animation-name: error;
+		animation-duration: 0.4s;
+		animation-timing-function: linear;
+		animation-iteration-count: 1;
+	}
+	.caja_texto_error:hover{
+		background-color: #FF0000;
+		border: 2px solid #FFFFFF;
+		transition:all .5s ease-in-out;
+	}
+	.caja_texto_error::placeholder{
+		color: #FF0000;
+	}
+	.caja_texto_error:hover::placeholder{
+		color: #FFFFFF;
+	}
+
+	@keyframes error{
+		from{
+
+		}
+		25%{
+			transform: scale(2);
+		}
+		50%{
+			transform: scale(1.5);
+		}
+		75%{
+			transform: scale(2);
+		}
+		to{
+
+		}
+	}
