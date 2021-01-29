@@ -1,0 +1,269 @@
+/*
+	CSS
+	
+	Autor: Víctor Gutiérrez Tovar
+	Fecha 29/01/2021
+
+
+*/
+
+/*Estructura*/
+	html{
+		background-color: #808080;
+	}
+	body, header, nav, main, footer{
+		margin: 0;
+		padding: 0;
+		border: 0;
+		outline: 0;
+		font-size: 100%;
+		vertical-align: baseline;
+		background: transparent;
+	}
+	header{
+		background-color: #FF4000;
+		display: flex;
+		justify-content: center;
+
+		z-index: 2;
+	}
+	nav{
+		background-color: #FFA100;
+		display: flex;
+		justify-content: center;
+
+		animation-duration: .5s;
+		animation-name: slidein;
+
+		z-index: 3;
+	}
+	main{
+		background-color: #FFF;
+		margin-right:10%; 
+		margin-left:10%;
+		display: flex;
+		flex-direction: column;
+
+		z-index: 1;
+	}
+		#nav_main{
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+		}
+		.description_box{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+		.imagenes_box{
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+		}
+	footer{
+		background-color: #202020;
+		display: flex;
+		flex-direction: column;
+
+		z-index: 2;
+	}
+		#footer_box_1{
+			display: flex;
+			flex-direction: column;
+			width:100%;
+		}
+		#footer_box_2{
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			width:100%;
+		}
+			.footer_box_2_unity{
+				width: 20%;
+			}
+
+/*Letras y cajas*/
+	p::selection,h1::selection,h2::selection,h3::selection,img::selection,a::selection,br::selection{ 
+		color: #FFF;
+		background-color: #FFA100;
+	}
+	h1{
+		font-family: Calibri, Helvetica, Arial, sans-serif;
+		font-size: 50px;
+		color: #FFF;
+	}
+	h2{
+		font-family: Calibri, Helvetica, Arial, sans-serif;
+		font-size: 35px;
+		color: #FFF;
+	}
+	h3{
+		font-family: Calibri, Helvetica, Arial, sans-serif;
+		font-size: 25px;
+		color: #FFF;
+	}
+	.creditos{
+		font-family: Calibri, Helvetica, Arial, sans-serif;
+		font-size: 18px;
+		color: #FFF;
+		width: 100%;
+	}
+	a{
+		font-family: Calibri, Helvetica, Arial, sans-serif;
+		font-size: 18px;
+		color: #FFF;
+	}
+	.title_main{
+		/*letra*/
+		color: #000;
+		font-family: Calibri, Helvetica, Arial, sans-serif;
+		font-size: 24px;
+		text-decoration: none;
+	}
+	.title_maincenter{
+		color: #000;
+		font-family: Calibri, Helvetica, Arial, sans-serif;
+		font-size: 30px;
+		text-decoration: none;
+		text-align: center; 
+	}
+	.description_main{
+		/*letra*/
+		color: #000;
+		font-family: Calibri, Helvetica, Arial, sans-serif;
+		font-size: 20px;
+		text-decoration: none;
+	}
+	.description_mainbox{
+		/*letra*/
+		margin-left: 100px;
+		margin-right: 50px;
+		width: 65%;
+
+		color: #000;
+		font-family: Calibri, Helvetica, Arial, sans-serif;
+		font-size: 20px;
+		text-decoration: none;
+	}
+	.description_mainmargin{
+		/*letra*/
+		margin-left: 100px;
+		margin-right: 50px;
+
+		color: #000;
+		font-family: Calibri, Helvetica, Arial, sans-serif;
+		font-size: 20px;
+		text-decoration: none;
+	}
+
+/*Botones*/
+	.navbox{
+		/*caja*/
+		padding: 15px;
+		background-color: #FFA100;
+		outline: none;
+		border: none;
+		/*letra*/
+		color: #000;
+		font-family: Calibri, Helvetica, Arial, sans-serif;
+		font-size: 24px;
+		text-decoration: none;
+		text-align:center;
+	}
+	.navbox:hover{
+		background-color: #D88800;
+		border-radius: 2px;
+		color: #FFFFFF;
+		transition:all .2s ease-in-out;
+	}
+
+
+	.navbox_main{
+		/*caja*/
+		margin-top: 20px;
+		margin-bottom: 20px;
+
+		width: 30%;
+
+		padding: 15px;
+		background-color: #F5DD7B;
+		outline: none;
+		border: none;
+		border-radius: 20px;
+
+		animation-duration: .5s;
+		animation-name: movedown;
+
+		cursor: pointer;
+	}
+	.navbox_main:hover{
+		background-color: #FFEB99;
+		transform: scale(1.05);
+		transition:all .75s ease-in-out;
+	}
+
+
+	.boton_subir{
+		/*caja*/
+		padding: 30px;
+		background-color: #FF4000;
+		outline: none;
+		border: none;
+		/*letra*/
+		color: #FFFFFF;
+		font-family: Calibri, Helvetica, Arial, sans-serif;
+		font-size: 24px;
+		text-decoration: none;
+		text-align:center;
+		text-align:center;
+	}
+	.boton_subir:hover{
+		background-color: #FFA100;
+		transition:all .5s ease-in-out;
+	}
+
+/*Imagemes y más*/
+	.img_main{
+		width: 100%;
+	}
+	.img_description{
+		width: 250px;
+		margin: 5px;
+	}
+	.img_full{
+		width: 100%;
+	}
+	.download{
+		color: #000;
+		font-family: Calibri, Helvetica, Arial, sans-serif;
+		font-size: 30px;
+		text-decoration: none;
+	}
+	.download:hover{
+		color: #FFA100;
+		text-decoration: underline;
+	}
+
+/*animaciones*/
+  
+@keyframes slidein{
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+@keyframes movedown{
+  from {
+    margin-top: 100%;
+  }
+
+  to {
+    margin-top: 10px;
+  }
+}
