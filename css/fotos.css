@@ -1,0 +1,101 @@
+body, header, nav, main, footer{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+/*fuentes*/
+@font-face {
+	font-family: weather;
+	src: url(../fonts/Better_Weather.otf);
+}
+/*texto*/
+h2{
+	color: #FFF;
+	font-family: weather, Arial, sans-serif;
+	font-size: 50px;
+	text-align: center;
+	font-weight: 1;
+
+	position: sticky;
+	top: 50px;
+}
+
+.navbox_footer{
+	font-family: Arial, sans-serif;
+	font-size: 20px;
+	color: #FFF;
+
+	outline: none;
+	border: none;
+	text-decoration: none;
+}
+.navbox_footer:hover{
+	text-decoration: underline;
+}
+
+p{
+	font-family: Arial, sans-serif;
+	font-size: 20px;
+	color: #FFF;
+
+	outline: none;
+	border: none;
+	text-decoration: none;
+	margin: none;
+}
+/*estructura*/
+body{
+	background-color: #000;
+}
+
+nav{
+	background-color: #000;
+	display: flex;
+	justify-content: center;
+
+	z-index: 2;
+	position: sticky;
+	top: 0;
+	opacity: 0.7;
+}
+
+main{
+	margin-left: 17%;
+	margin-right: 17%;
+}
+
+footer{
+	background-color: #202020;
+	display: flex;
+	justify-content: space-around;
+
+	z-index: 2;
+}
+
+/*botones del nav*/
+.navbox{
+	font-family: Arial, sans-serif;
+	font-size: 25px;
+	padding: 15px;
+	background-color: #000;
+	color: #FFF;
+
+	outline: none;
+	border: none;
+	text-decoration: none;
+
+}
+.navbox:hover{
+	background-color: #f95015;
+}
+
+nav:hover{
+	opacity: 1;
+}
+
+
